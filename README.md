@@ -14,6 +14,6 @@ A quick example of how to make an image, or any item really, zoom and 'pop out' 
 - `.length`
 - `.prepend`
 - `.ready`
-- `.siblings` - removed in last commit in favor of $(body).children() 
+- `.siblings` - removed in last commit
 - `.text`
 - `.trigger`

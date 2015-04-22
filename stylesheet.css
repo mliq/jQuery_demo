@@ -1,4 +1,4 @@
-#sweetId {
+/*#sweetId {
 	text-align: center;
 	font-size: 32px;
 	color: #07AA9E;
@@ -11,13 +11,41 @@
 	width: 350px;
 	background-color: #337277;
 }
+*/
 
 #batCat {
 	display: block;
+	top: 10%;
+	left: 40%;
+	position: absolute;
 	height: 200px;
 	/*400px*/
 	width: 187.5px; 
 	/*375px*/
 	margin: 5px auto 5px auto;
 	border-radius: 20px;
+}
+
+#div0 {
+
+}
+
+.zoomText {
+	font-size:20px;
+	color: orange;
+	text-align:center;
+	margin: 50% 50%;
+}
+
+#div1 {
+	position: absolute;
+	top: 50%;
+	left: 40%	;
+	z-index:0;
+	width:200px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: black;
+	vertical-align: middle;
+
 }

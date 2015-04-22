@@ -17,7 +17,11 @@ $(document).ready(function () {
 
     if(textThing.text() =="Bat Cat?"){
       textThing.text("BATCAT");
-      textThing.delay(500).after("<audio id='song' src='batcatfull.mp3' autoplay></audio>");
+      if(textThing.siblings('audio').length){
+        textThing.siblings('audio').trigger('play');
+      } else {
+        textThing.delay(500).after("<audio id='song' src='batcatfull.mp3' autoplay></audio>");
+      }
     }
 
     textThing.fadeIn(800);
@@ -30,7 +34,7 @@ $(document).ready(function () {
     textThing.css('color', 'orange');
     if(textThing.text() =="BATCAT"){
       textThing.text("Bat Cat?");
-      textThing.siblings('audio').remove();
+      textThing.siblings('audio').trigger('pause');
     }
 
   }

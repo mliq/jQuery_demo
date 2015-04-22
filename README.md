@@ -3,10 +3,13 @@
 A quick example of how to make an image, or any item really, zoom and 'pop out' when the pointer hovers over it.
 
 ## jQuery Functions Used:
-- `.css`
-- `.hover`
 - `.animate`
-- `.fadeIn`
 - `.closest`
+- `.css`
+- `.delay`
+- `.fadeIn`
 - `.hide`
+- `.hover`
+- `.siblings`
 - `.text`
+- `.trigger`

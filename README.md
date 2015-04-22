@@ -4,6 +4,7 @@ A quick example of how to make an image, or any item really, zoom and 'pop out' 
 
 ## jQuery Functions Used:
 - `.animate`
+- `.children`
 - `.closest`
 - `.css`
 - `.delay`
@@ -11,6 +12,8 @@ A quick example of how to make an image, or any item really, zoom and 'pop out' 
 - `.hide`
 - `.hover`
 - `.length`
+- `.prepend`
+- `.ready`
 - `.siblings` - removed in last commit
 - `.text`
 - `.trigger`

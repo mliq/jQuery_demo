@@ -6,3 +6,7 @@ A quick example of how to make an image, or any item really, zoom and 'pop out' 
 - `.css`
 - `.hover`
 - `.animate`
+- `.fadeIn`
+- `.closest`
+- `.hide`
+- `.text`

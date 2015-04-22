@@ -13,15 +13,13 @@ $(document).ready(function () {
 
     textThing.css('font-size', '60px').css('font-family', 'BatmanForeverAlternate').css('color', 'yellow');
 
-    console.log(textThing.text());
-
+    if(thing.siblings('audio').length){
+        thing.siblings('audio').trigger('play');
+      } else {
+        thing.delay(500).after("<audio id='song' src='batcatfull.mp3' autoplay></audio>");
+      }
     if(textThing.text() =="Bat Cat?"){
       textThing.text("BATCAT");
-      if(textThing.siblings('audio').length){
-        textThing.siblings('audio').trigger('play');
-      } else {
-        textThing.delay(500).after("<audio id='song' src='batcatfull.mp3' autoplay></audio>");
-      }
     }
 
     textThing.fadeIn(800);
@@ -34,8 +32,8 @@ $(document).ready(function () {
     textThing.css('color', 'orange');
     if(textThing.text() =="BATCAT"){
       textThing.text("Bat Cat?");
-      textThing.siblings('audio').trigger('pause');
     }
+    thing.siblings('audio').trigger('pause');
 
   }
   );

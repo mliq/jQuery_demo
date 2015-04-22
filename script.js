@@ -8,6 +8,15 @@ $(document).ready(function () {
     textThing = thing.children('.zoomText');
 
     thing.css('z-index', 1);
+
+    if(this.id=='div1'){
+      $('#monkey').fadeIn(1000);
+    }
+
+    if(this.id=='batCat'){
+      $('#monkey').fadeOut(1000);
+    }
+
     $(this).animate({ height: '400', width: '375', left: '-=85', top: '-=55' }, 'fast');
     textThing.hide();
 

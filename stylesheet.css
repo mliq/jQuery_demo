@@ -15,6 +15,12 @@
 
 }
 
+#monkey {
+	display: none;
+	width:20%;
+	height:30%;
+}
+
 .zoomText {
 	font-size: 20px;
 	font-family: monospace;

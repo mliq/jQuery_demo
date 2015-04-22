@@ -12,12 +12,25 @@ $(document).ready(function () {
     if(this.id=='div1'){
       $('#monkey').fadeIn(1000);
       $('#monkey').css('z-index',2);
-      $('#monkeyDiv').delay(1000).animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000');
+      $('#monkeyDiv').delay(1000).animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000');
     }
 
     if(this.id=='batCat'){
-      // $('#monkeyDiv').css(color,'red');
-      $('#monkey').fadeOut(1000);
+      $('#monkey').animate({width:'600', height: '600'},1000).animate({width:'0', height: '0'},500).fadeOut(1000);
+      // $('body').children('#song').trigger('pause');
+      $('#monkey').delay(500).prepend("<audio id='horn' src='batmanHorn.mp3' autoplay></audio>");
+
+
+      // $('#monkeyDiv').animate({marginTop: '+=50px'},'500').animate({marginTop: '+=50px'},'500').animate({marginTop: '+=50px'},'500');
+      // $('#monkey').delay(600).fadeOut(1000);
+    }
+
+    if(this.id=='div1'){
+      if($('body').children('audio').length){
+        $('body').children('audio').trigger('play');
+      } else {
+        $('body').delay(500).prepend("<audio id='song' src='batcatfull.mp3' autoplay></audio>");
+      }
     }
 
     $(this).animate({ height: '400', width: '375', left: '-=85', top: '-=55' }, 'fast');
@@ -25,11 +38,6 @@ $(document).ready(function () {
 
     textThing.css('font-size', '60px').css('font-family', 'BatmanForeverAlternate').css('color', 'yellow');
 
-    if($('body').children('audio').length){
-        $('body').children('audio').trigger('play');
-      } else {
-        $('body').delay(500).prepend("<audio id='song' src='batcatfull.mp3' autoplay></audio>");
-      }
 
     if(textThing.text() =="Bat Cat?"){
       textThing.text("BATCAT");
@@ -43,6 +51,7 @@ $(document).ready(function () {
     textThing.css('font-size', '20px');
     textThing.css('font-family', 'monospace');
     textThing.css('color', 'orange');
+    
     if(textThing.text() =="BATCAT"){
       textThing.text("Bat Cat?");
     }

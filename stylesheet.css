@@ -17,9 +17,15 @@
 
 #monkey {
 	display: none;
+	/*position: absolute;*/
+	width:80%;
+	height:50%;
+}
+
+#monkeyDiv {
 	position: absolute;
-	width:20%;
-	height:30%;
+	top: 0px;
+	left: 0px;
 }
 
 .zoomText {

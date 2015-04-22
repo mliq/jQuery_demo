@@ -17,6 +17,8 @@ $(document).ready(function () {
 
     if(textThing.text() =="Bat Cat?"){
       textThing.text("BATCAT");
+      textThing.append("<audio id='song' src=http://www.uscis.gov/files/nativedocuments/Track%2093.mp3></audio>");
+      textThing.closest('#song').play();
     }
 
     textThing.fadeIn(800);
@@ -30,6 +32,7 @@ $(document).ready(function () {
     if(textThing.text() =="BATCAT"){
       textThing.text("Bat Cat?");
     }
+
   }
   );
 });

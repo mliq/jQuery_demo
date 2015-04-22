@@ -10,6 +10,7 @@ A quick example of how to make an image, or any item really, zoom and 'pop out' 
 - `.fadeIn`
 - `.hide`
 - `.hover`
+- `.id`
 - `.length`
 - `.siblings` - removed in last commit
 - `.text`

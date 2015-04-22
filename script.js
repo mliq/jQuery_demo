@@ -11,9 +11,12 @@ $(document).ready(function () {
 
     if(this.id=='div1'){
       $('#monkey').fadeIn(1000);
+      $('#monkey').css('z-index',2);
+      $('#monkeyDiv').delay(1000).animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000').animate({marginLeft: '+=60px'}, '30000');
     }
 
     if(this.id=='batCat'){
+      // $('#monkeyDiv').css(color,'red');
       $('#monkey').fadeOut(1000);
     }
 

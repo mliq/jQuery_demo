@@ -17,6 +17,7 @@
 
 #monkey {
 	display: none;
+	position: absolute;
 	width:20%;
 	height:30%;
 }
